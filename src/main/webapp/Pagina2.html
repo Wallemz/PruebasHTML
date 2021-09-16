@@ -13,4 +13,81 @@ and open the template in the editor.
     <body>
         <div>TODO write content</div>
     </body>
+    
+    <!-- Tablas -->
+    <center>
+        <table border="solid"  style="width: 900px">
+            <thead>
+                <tr style="height: 100px">
+                    <th style="width: 20%">Encabezado página</th>
+                    <th style="width: 70%">Nombre Empresa</th>
+                    <th style="width: 10%"><a href="index.html">Iniciar sesión</a></th>
+                </tr>
+            </thead>
+        </table>
+        
+        <!-- Listas -->
+        <table border="solid"  style="width: 100%">
+            <thead>
+                <tr style="height: 100px">
+                    <td style="width: 20%">
+                        <h2>Menú</h2>
+                        <ol>
+                            <li><h3>Gestión de Usuarios</h3>
+                                <ol> <!-- Lista Ordenada asc -->
+                                    <li>Registrar Usuarios</li>
+                                    <li>Consultar Usuarios</li>
+                                    <li>Actualizar Usuarios</li>
+                                    <li>Eliminar Usuarios</li>
+                                </ol>
+                            </li>
+                            <li><h3>Gestión de Vuelos</h3>
+                                <ol reversed> <!-- Lista Ordenada desc -->
+                                    <li>Registrar Vuelos</li>
+                                    <li>Consultar Vuelos</li>
+                                    <li>Actualizar Vuelos</li>
+                                    <li>Eliminar Vuelos</li>
+                                </ol>
+                            </li>
+                            <li><h3>Gestión de Aviones</h3>
+                                <ul> <!-- Lista Desordenada con punto -->
+                                    <li>Registrar Aviones</li>
+                                    <li>Consultar Aviones</li>
+                                    <li>Actualizar Aviones</li>
+                                    <li>Eliminar Aviones</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </td>
+                    <td style="width: 80%"><h2>Formulario de registro</h2>
+                    
+                    <!-- FORMULARIOS -->
+                        <form action="index.html" method="POST">
+                            <label>Nombre: </label>
+                            <input type="text" value="William">
+                            <input type="text" placeholder="Pedro" name="nombre">
+                            <label>Edad: </label>
+                            <input type="number" name="edad">
+                            <label>Fecha de Nacimiento: </label>
+                            <input type="date" name="fecha">
+                            <label>Masculino: </label>
+                            <input type="radio" value="Masculino" name="generoM">
+                            <label>Femenino: </label>
+                            <input type="radio" value="Femenino" name="generoF">
+                            
+                            <div>
+                                <label>Tipo de Usuario: </label>
+                                <select name="tipoUsuario">
+                                    <option>Administrador</option>
+                                    <option>Vendedor</option>
+                                    <option>Auxiliar</option>
+                                </select>
+                                <button>ENVIAR</button>
+                            </div>
+                        </form>
+                    </td>   
+                </tr>
+            </thead>
+        </table>
+    </center>
 </html>
